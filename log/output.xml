@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.10 on win32)" generated="2026-01-21T16:39:36.135560" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\MathijesiJohnbritto\PycharmProjects\demo\schemathesis_learning\test.robot">
+<kw name="Load OpenAPI Schema" type="SETUP">
+<msg time="2026-01-21T16:39:36.204959" level="FAIL">No keyword with name 'Load OpenAPI Schema' found.</msg>
+<arg>swagger.yaml</arg>
+<arg>http://localhost:8080</arg>
+<status status="FAIL" start="2026-01-21T16:39:36.204959" elapsed="0.000976">No keyword with name 'Load OpenAPI Schema' found.</status>
+</kw>
+<test id="s1-t1" name="Validate API Using Schema" line="6">
+<status status="FAIL" start="2026-01-21T16:39:36.205935" elapsed="0.000999">Parent suite setup failed:
+No keyword with name 'Load OpenAPI Schema' found.</status>
+</test>
+<status status="FAIL" start="2026-01-21T16:39:36.163417" elapsed="0.043517">Suite setup failed:
+No keyword with name 'Load OpenAPI Schema' found.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-21T16:39:36.199931" level="ERROR">Error in file 'C:\Users\MathijesiJohnbritto\PycharmProjects\demo\schemathesis_learning\test.robot' on line 2: Importing library 'schemathesis' failed: ModuleNotFoundError: No module named 'schemathesis'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\MathijesiJohnbritto\AppData\Roaming\JetBrains\PyCharmCE2025.1\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\MathijesiJohnbritto\PycharmProjects\demo
+  C:\Users\MathijesiJohnbritto\AppData\Roaming\JetBrains\PyCharmCE2025.1\plugins\robotframework-intellij\lib
+  C:\Users\MathijesiJohnbritto\AppData\Roaming\JetBrains\PyCharmCE2025.1\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Users\MathijesiJohnbritto\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\MathijesiJohnbritto\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\MathijesiJohnbritto\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\MathijesiJohnbritto\AppData\Local\Programs\Python\Python312
+  C:\Users\MathijesiJohnbritto\AppData\Local\Programs\Python\Python312\Lib\site-packages
+  C:\Users\MathijesiJohnbritto\AppData\Local\Programs\Python\Python312\Lib\site-packages\win32
+  C:\Users\MathijesiJohnbritto\AppData\Local\Programs\Python\Python312\Lib\site-packages\win32\lib
+  C:\Users\MathijesiJohnbritto\AppData\Local\Programs\Python\Python312\Lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
