@@ -1,0 +1,15 @@
+==============================================================================
+Abhibus Search                                                                
+==============================================================================
+Verify user is able to search bus                                     | PASS |
+------------------------------------------------------------------------------
+Verify user is able to search bus for today                           | PASS |
+------------------------------------------------------------------------------
+Verify user is able to search bus for tomorrow                        | PASS |
+------------------------------------------------------------------------------
+Verify user is able to search bus by date                             | PASS |
+------------------------------------------------------------------------------
+Abhibus Search                                                        | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\MathijesiJohnbritto\PycharmProjects\demo\DIA\day05\testSuites\pabot_results\0\output.xml

@@ -1,0 +1,7 @@
+url = "https://www.abhibus.com"
+timeout = "20s"
+browser= "chrome"
+enter_date = "25"
+source_city = "Tirunelveli"
+destination_city = "Coimbatore"
+enter_month = "July"

@@ -1,0 +1,2 @@
+Artificial intelligence (AI), particularly in the form of artificial neural networks (ANNs), has revolutionized the way machines process information, enabling systems to perform tasks traditionally requiring human cognition.
+At the core of most modern AI systems lies the concept of a neural network, which is inspired by the structure of the human brain.

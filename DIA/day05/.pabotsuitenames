@@ -1,0 +1,8 @@
+datasources:4c1239176876cd1c64205286a7bde610de07bf69
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:530b55110431d07e2384ae2bd485e6976fab9f47
+--suite testSuites.Search1
+--suite testSuites.Search2
+--suite testSuites.Search3
+--suite testSuites.Search4

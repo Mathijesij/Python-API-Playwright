@@ -1,0 +1,4 @@
+robotframework == 7.0.1
+robotframework-seleniumlibrary == 6.7.1
+selenium == 4.33.0
+Faker~=37.4.2
