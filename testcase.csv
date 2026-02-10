@@ -1,0 +1,43 @@
+TestCaseName,Module,TestType,Precondition,BDDScenario,Priority
+Valid login with correct credentials,Login,Functional,User is registered and active,"Given user is on the login page
+When user enters valid username ""testuser""
+And user enters valid password ""Password@123""
+And user clicks Login
+Then user should be logged in successfully and redirected to dashboard",High
+Login with invalid password,Login,Negative,User is registered,"Given user is on the login page
+When user enters valid username ""testuser""
+And user enters invalid password ""wrongpass""
+And user clicks Login
+Then error message should be displayed",High
+Login with invalid username,Login,Negative,User is not registered,"Given user is on the login page
+When user enters invalid username ""invaliduser""
+And user enters valid password ""Password@123""
+And user clicks Login
+Then error message should be displayed",High
+Login with empty username and password,Login,Negative,Login page is open,"Given user is on the login page
+When user clicks Login without entering any username and password
+Then validation message should be displayed",High
+Login with empty username,Login,Negative,Login page is open,"Given user is on the login page
+When user leaves username empty
+And enters password ""Password@123""
+And clicks Login
+Then username required validation message should be displayed",High
+Login with empty password,Login,Negative,Login page is open,"Given user is on the login page
+When user enters username ""testuser""
+And leaves password empty
+And clicks Login
+Then password required validation message should be displayed",High
+Password masked on entry,Login,UI,Login page is open,"Given user is on the login page
+When user enters password ""Password@123""
+Then password characters should be masked",High
+Logout after successful login,Login,Functional,User is logged in,"Given user is logged in
+When user clicks Logout
+Then user should be logged out and redirected to login page",High
+Session timeout validation,Login,Security,User is logged in,"Given user is logged in
+When user stays idle for 15 minutes
+Then user should be logged out automatically",High
+SQL injection attempt,Login,Security,Login page is open,"Given user is on the login page
+When user enters SQL injection ""' OR '1'='1"" in username field
+And enters any password
+And clicks Login
+Then login should fail and show error message",High

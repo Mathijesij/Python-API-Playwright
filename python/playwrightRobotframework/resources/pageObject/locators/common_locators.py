@@ -1,0 +1,5 @@
+home = ""
+products = ""
+cart = ""
+signup_or_login = ""
+continue_btn = ""

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.0.1 (Python 3.12.10 on win32)" generated="2025-07-18T18:54:39.540936" rpa="false" schemaversion="5">
+<suite id="s1" name="Abhibus Search" source="C:\Users\MathijesiJohnbritto\PycharmProjects\demo\DIA\day05\testSuites\abhibus_search.robot">
+<test id="s1-t1" name="Verify user is able to search bus" line="8">
+<kw name="Launch Browser" owner="homepage_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:53:57.116400" level="INFO">Opening browser 'chrome' to base url 'https://www.abhibus.com'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:53:57.116400" elapsed="5.288521"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:54:02.408000" elapsed="0.118544"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:53:57.116400" elapsed="5.412241"/>
+</kw>
+<kw name="Enter the source" owner="homepage_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${leave_from}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:02.528641" elapsed="0.059559"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:02.590212" level="INFO">Clicking element '//input[@placeholder='Leaving From']'.</msg>
+<arg>${leave_from}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:02.588200" elapsed="0.166510"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:02.754710" level="INFO">Typing text 'Tirunelveli' into text field '//input[@placeholder='Leaving From']'.</msg>
+<arg>${leave_from}</arg>
+<arg>${source_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:02.754710" elapsed="0.160529"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${enter_source}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:02.915239" elapsed="0.527734"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:03.442973" level="INFO">Clicking element '//*[text()= 'Tirunelveli']'.</msg>
+<arg>${enter_source}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:03.442973" elapsed="0.600195"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:02.528641" elapsed="1.514527"/>
+</kw>
+<kw name="Enter the destination" owner="homepage_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:04.045185" level="INFO">Clicking element '//input[@placeholder='Going To']'.</msg>
+<arg>${going_To}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:04.045185" elapsed="0.117835"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:04.163020" level="INFO">Typing text 'Coimbatore' into text field '//input[@placeholder='Going To']'.</msg>
+<arg>${going_To}</arg>
+<arg>${destination_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:04.163020" elapsed="0.131855"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${enter_destination}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:04.294875" elapsed="0.506663"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:04.801538" level="INFO">Clicking element '//*[text()='Coimbatore']'.</msg>
+<arg>${enter_destination}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:04.801538" elapsed="0.176876"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:04.043168" elapsed="0.935246"/>
+</kw>
+<kw name="Click search button" owner="homepage_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:04.978414" level="INFO">Clicking element '//span[text()='Search']'.</msg>
+<arg>${search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:04.978414" elapsed="0.622860"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sort_by}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:05.601274" elapsed="0.649204"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:04.978414" elapsed="1.272064"/>
+</kw>
+<kw name="Close the Browser" owner="homepage_keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:54:06.250478" elapsed="2.330770"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:06.250478" elapsed="2.332275"/>
+</kw>
+<tag>bus</tag>
+<status status="PASS" start="2025-07-18T18:53:57.116400" elapsed="11.466353"/>
+</test>
+<test id="s1-t2" name="Verify user is able to search bus for today" line="14">
+<kw name="Launch Browser" owner="homepage_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:08.585822" level="INFO">Opening browser 'chrome' to base url 'https://www.abhibus.com'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:54:08.585822" elapsed="3.401741"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:54:11.987563" elapsed="0.073952"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:08.585822" elapsed="3.475693"/>
+</kw>
+<kw name="Enter the source" owner="homepage_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${leave_from}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:12.063527" elapsed="0.072649"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:12.139450" level="INFO">Clicking element '//input[@placeholder='Leaving From']'.</msg>
+<arg>${leave_from}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:12.136176" elapsed="0.311053"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:12.448419" level="INFO">Typing text 'Tirunelveli' into text field '//input[@placeholder='Leaving From']'.</msg>
+<arg>${leave_from}</arg>
+<arg>${source_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:12.447229" elapsed="0.233237"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${enter_source}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:12.680466" elapsed="0.495715"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:13.176181" level="INFO">Clicking element '//*[text()= 'Tirunelveli']'.</msg>
+<arg>${enter_source}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:13.176181" elapsed="0.126141"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:12.061515" elapsed="1.240807"/>
+</kw>
+<kw name="Enter the destination" owner="homepage_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:13.302322" level="INFO">Clicking element '//input[@placeholder='Going To']'.</msg>
+<arg>${going_To}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:13.302322" elapsed="0.110691"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:13.413013" level="INFO">Typing text 'Coimbatore' into text field '//input[@placeholder='Going To']'.</msg>
+<arg>${going_To}</arg>
+<arg>${destination_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:13.413013" elapsed="0.114206"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${enter_destination}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:13.527219" elapsed="0.506613"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:14.033832" level="INFO">Clicking element '//*[text()='Coimbatore']'.</msg>
+<arg>${enter_destination}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:14.033832" elapsed="0.167517"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:13.302322" elapsed="0.899027"/>
+</kw>
+<kw name="Click Today button" owner="homepage_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:14.201349" level="INFO">Clicking element '//a[text()='Today']'.</msg>
+<arg>${today}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:14.201349" elapsed="0.690744"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sort_by}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:14.894101" elapsed="1.172849"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:14.201349" elapsed="1.865601"/>
+</kw>
+<kw name="Close the Browser" owner="homepage_keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:54:16.068966" elapsed="2.508415"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:16.068966" elapsed="2.508415"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:08.582753" elapsed="9.994628"/>
+</test>
+<test id="s1-t3" name="Verify user is able to search bus for tomorrow" line="19">
+<kw name="Launch Browser" owner="homepage_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:18.579589" level="INFO">Opening browser 'chrome' to base url 'https://www.abhibus.com'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:54:18.579589" elapsed="3.602451"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:54:22.183373" elapsed="0.069153"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:18.579589" elapsed="3.672937"/>
+</kw>
+<kw name="Enter the source" owner="homepage_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${leave_from}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:22.254789" elapsed="0.066075"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:22.320864" level="INFO">Clicking element '//input[@placeholder='Leaving From']'.</msg>
+<arg>${leave_from}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:22.320864" elapsed="0.295856"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:22.618624" level="INFO">Typing text 'Tirunelveli' into text field '//input[@placeholder='Leaving From']'.</msg>
+<arg>${leave_from}</arg>
+<arg>${source_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:22.618624" elapsed="0.232195"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${enter_source}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:22.850819" elapsed="0.477266"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:23.328085" level="INFO">Clicking element '//*[text()= 'Tirunelveli']'.</msg>
+<arg>${enter_source}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:23.328085" elapsed="0.163679"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:22.252526" elapsed="1.239238"/>
+</kw>
+<kw name="Enter the destination" owner="homepage_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:23.493658" level="INFO">Clicking element '//input[@placeholder='Going To']'.</msg>
+<arg>${going_To}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:23.493658" elapsed="0.192507"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:23.688265" level="INFO">Typing text 'Coimbatore' into text field '//input[@placeholder='Going To']'.</msg>
+<arg>${going_To}</arg>
+<arg>${destination_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:23.688265" elapsed="0.246331"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${enter_destination}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:23.934596" elapsed="0.528295"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:24.462891" level="INFO">Clicking element '//*[text()='Coimbatore']'.</msg>
+<arg>${enter_destination}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:24.462891" elapsed="0.141517"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:23.491764" elapsed="1.112644"/>
+</kw>
+<kw name="Click Tomorrow button" owner="homepage_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:24.604408" level="INFO">Clicking element '//a[text()='Tomorrow']'.</msg>
+<arg>${tomorrow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:24.604408" elapsed="0.626651"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sort_by}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:25.231059" elapsed="1.249386"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:24.604408" elapsed="1.876037"/>
+</kw>
+<kw name="Close the Browser" owner="homepage_keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:54:26.480445" elapsed="2.345777"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:26.480445" elapsed="2.345777"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:18.579589" elapsed="10.246633"/>
+</test>
+<test id="s1-t4" name="Verify user is able to search bus by date" line="24">
+<kw name="Launch Browser" owner="homepage_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:28.826222" level="INFO">Opening browser 'chrome' to base url 'https://www.abhibus.com'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:54:28.826222" elapsed="3.409346"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:54:32.237085" elapsed="0.078480"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:28.826222" elapsed="3.489343"/>
+</kw>
+<kw name="Enter the source" owner="homepage_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${leave_from}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:32.317581" elapsed="0.048813"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:32.372417" level="INFO">Clicking element '//input[@placeholder='Leaving From']'.</msg>
+<arg>${leave_from}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:32.366394" elapsed="0.283559"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:32.649953" level="INFO">Typing text 'Tirunelveli' into text field '//input[@placeholder='Leaving From']'.</msg>
+<arg>${leave_from}</arg>
+<arg>${source_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:32.649953" elapsed="0.200080"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${enter_source}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:32.850033" elapsed="0.700501"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:33.550534" level="INFO">Clicking element '//*[text()= 'Tirunelveli']'.</msg>
+<arg>${enter_source}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:33.550534" elapsed="0.118899"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:32.315565" elapsed="1.353868"/>
+</kw>
+<kw name="Enter the destination" owner="homepage_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:33.672184" level="INFO">Clicking element '//input[@placeholder='Going To']'.</msg>
+<arg>${going_To}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:33.672184" elapsed="0.209933"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:33.884581" level="INFO">Typing text 'Coimbatore' into text field '//input[@placeholder='Going To']'.</msg>
+<arg>${going_To}</arg>
+<arg>${destination_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:33.882117" elapsed="0.127053"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${enter_destination}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:34.009170" elapsed="0.509630"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:34.518800" level="INFO">Clicking element '//*[text()='Coimbatore']'.</msg>
+<arg>${enter_destination}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:34.518800" elapsed="0.115726"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:33.669433" elapsed="0.965093"/>
+</kw>
+<kw name="Select Date" owner="homepage_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:34.637033" level="INFO">Clicking element '//input[@placeholder='Onward Journey Date']'.</msg>
+<arg>${onward_journey_date}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:34.637033" elapsed="0.094406"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:34.731439" level="INFO">Clicking element '//*[text()='22']'.</msg>
+<arg>${date}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:34.731439" elapsed="0.084666"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:34.634526" elapsed="0.181579"/>
+</kw>
+<kw name="Click search button" owner="homepage_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:54:34.816105" level="INFO">Clicking element '//span[text()='Search']'.</msg>
+<arg>${search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:54:34.816105" elapsed="0.686395"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sort_by}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-18T18:54:35.503628" elapsed="1.204438"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:34.816105" elapsed="1.893362"/>
+</kw>
+<kw name="Close the Browser" owner="homepage_keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:54:36.709467" elapsed="2.372538"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:36.709467" elapsed="2.372538"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:54:28.826222" elapsed="10.257883"/>
+</test>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
+<status status="PASS" start="2025-07-18T18:53:56.711000" elapsed="41.966000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">bus</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Abhibus Search">Abhibus Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
